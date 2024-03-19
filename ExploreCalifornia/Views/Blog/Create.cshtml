@@ -1,0 +1,23 @@
+﻿@model ExploreCalifornia.Models.Post
+@{
+    Layout = "_Layout";
+}
+
+<h1>Create Blog Post</h1>
+
+<fieldset>
+
+    @using (Html.BeginForm())
+    {
+        <p>
+            @Html.LabelFor(x => x.Body)
+            @Html.EditorFor(x => x.Body)
+        </p>
+
+        <p>
+            @Html.LabelFor(x => x.Body)
+            @Html.TextAreaFor(x => x.Body)
+        </p>
+    }
+
+</fieldset>
